@@ -1,0 +1,40 @@
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+ministryname=document.form.ministryname.value;
+if(ministryname=="")
+{
+alert("enter ministryname");
+document.form.ministryname.focus();
+return false;
+}
+if(!isNaN(ministryname))
+{
+alert("enter ministryname:");
+document.form.ministryname.focus();
+return false;
+}
+ministrypassword=document.form.ministrypassword.value;
+if(ministrypassword=="")
+{
+alert("enter ministrypassword");
+document.form.ministrypassword.focus();
+return false;
+}
+if(!isNaN(ministrypassword))
+{
+alert("enter ministrypassword:");
+document.form.ministrypassword.focus();
+return false;
+}
+}
+</script>
+<body bgcolor="orange">
+<center>
+<form name="form" action="ministrylogin.jsp" onsubmit="return validation1()">
+<font color="green"><h2><b><i> WELCOME TO MINISTRY</i></h2></font><BR><BR>
+Enter user name   <input type="text" name="ministryname"><BR><BR>
+Enter password     <input type="password" name="ministrypassword"><BR><BR>
+<input type="submit" value="Login">
+</form>
+</center>

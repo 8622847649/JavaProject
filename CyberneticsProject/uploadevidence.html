@@ -1,0 +1,48 @@
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+caseid=document.form.caseid.value;
+if(caseid=="")
+{
+alert("enter caseid");
+document.form.caseid.focus();
+return false;
+}
+
+status=document.form.status.value;
+if(status=="")
+{
+alert("enter status");
+document.form.status.focus();
+return false;
+}
+if(!isNaN(status))
+{
+alert("enter status:");
+document.form.status.focus();
+return false;
+}
+evidence=document.form.evidence.value;
+if(evidence=="")
+{
+alert("enter evidence");
+document.form.evidence.focus();
+return false;
+}
+}
+</script>
+<body bgcolor="skyblue"><font color="red"><marquee>UPDATE EVIDENCES</marquee></font>
+<form name="form"  action="uploadevidence.jsp" method="get" onsubmit="return validation1()">
+<center>
+<table>
+<tr><td>Case id</td><td><input type="text"name="caseid"></td></tr>
+<tr><td>Status</td><td> <input type="text"name="status"></td></tr>
+<tr><td>Evidence</td><td><input type="text"name="evidence"></td></tr>
+</table>
+</center><br><br>
+
+<center><input type="submit" value="Upload"></center>
+</form>
+</body>
+</html>

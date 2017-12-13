@@ -1,0 +1,94 @@
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+agentname=document.form.agentname.value;
+if(agentname=="")
+{
+alert("enter agentname");
+document.form.agentname.focus();
+return false;
+}
+if(!isNaN(agentname))
+{
+alert("enter agentname:");
+document.form.agentname.focus();
+return false;
+}
+password=document.form.password.value;
+if(password=="")
+{
+alert("enter password");
+document.form.password.focus();
+return false;
+}
+if(!isNaN(password))
+{
+alert("enter password:");
+document.form.password.focus();
+return false;
+}
+dob=document.form.dob.value;
+if(dob=="")
+{
+alert("enter dob");
+document.form.dob.focus();
+return false;
+}
+phno=document.form.phno.value;
+if(phno=="")
+{
+alert("enter phno");
+document.form.phno.focus();
+return false;
+}
+
+qual=document.form.qual.value;
+if(qual=="")
+{
+alert("enter qual");
+document.form.qual.focus();
+return false;
+}
+if(!isNaN(qual))
+{
+alert("enter qual:");
+document.form.qual.focus();
+return false;
+}
+address=document.form.address.value;
+if(address=="")
+{
+alert("enter address");
+document.form.address.focus();
+return false;
+}
+if(!isNaN(address))
+{
+alert("enter address:");
+document.form.address.focus();
+return false;
+}
+}
+</script>
+<body bgcolor="skyblue"><center><font color="red"><marquee>CREATING AGENT</marquee></font></center>
+
+<form name="form" action="createagent.jsp" method="get" onsubmit="return validation1()">
+<center>
+
+<table>
+<tr><td>Agent name</td><td><input type="text" name="agentname"></td></tr>
+<tr><td>password</td><td><input type="password" name="password"></td></tr>
+<tr><td>Date Of Birth</td><td><input type="text" name="dob">(dd-MM-yyyy)</td></tr>
+<tr><td>Contact Number</td><td><input type="text" name="phno"></td></tr>
+<tr><td>Qualification</td><td><input type="text" name="qual"></td></tr>
+<tr><td>Address</td><td><textarea name="address"></textarea></td></tr>
+
+</table>
+</center><br><br>
+
+<center><input type="submit" value="create"></center>
+
+</form>
+</table>
+</html>

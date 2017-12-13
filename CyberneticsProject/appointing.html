@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+caseid=document.form.caseid.value;
+if(caseid=="")
+{
+alert("enter caseid");
+document.form.caseid.focus();
+return false;
+}
+/*if(!isNaN(caseid))
+{
+alert("enter caseid:");
+document.form.caseid.focus();
+return false;
+}*/
+agentid=document.form.agentid.value;
+if(agentid=="")
+{
+alert("enter agentid");
+document.form.agentid.focus();
+return false;
+}
+/*if(!isNaN(agentid))
+{
+alert("enter agentid:");
+document.form.agentid.focus();
+return false;
+}*/
+agentname=document.form.agentname.value;
+if(agentname=="")
+{
+alert("enter agentname");
+document.form.agentname.focus();
+return false;
+}
+if(!isNaN(agentname))
+{
+alert("enter agentname:");
+document.form.agentname.focus();
+return false;
+}
+}
+</script>
+<body bgcolor="pink"><center><font color="red"><marquee>APPOINTING AGENT</marquee></font></center>
+
+<form  name="form"  action="appointagent.jsp"  method="get"  onsubmit="return validation1()">
+
+<table>
+<tr><td>case id</td><td><input type="text" name="caseid"></td></tr>
+<tr><td>agent id</td><td><input type="text" name="agentid"></td></tr>
+<tr><td>agent name</td><td><input type="text" name="agentname"></td></tr>
+</table>
+
+<br><br>
+
+<center><input type="submit" value="appoint"></center>
+</form>
+</body>
+</html>

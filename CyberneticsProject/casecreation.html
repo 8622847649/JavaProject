@@ -1,0 +1,69 @@
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+casename=document.form.casename.value;
+if(casename=="")
+{
+alert("enter casename");
+document.form.casename.focus();
+return false;
+}
+if(!isNaN(casename))
+{
+alert("enter casename:");
+document.form.casename.focus();
+return false;
+}
+casedetails=document.form.casedetails.value;
+if(casedetails=="")
+{
+alert("enter casedetails");
+document.form.casedetails.focus();
+return false;
+}
+if(!isNaN(casedetails))
+{
+alert("enter casedetails:");
+document.form.casedetails.focus();
+return false;
+}
+date=document.form.date.value;
+if(date=="")
+{
+alert("enter date");
+document.form.date.focus();
+return false;
+}
+resources=document.form.resources.value;
+if(resources=="")
+{
+alert("enter resources");
+document.form.resources.focus();
+return false;
+}
+if(!isNaN(resources))
+{
+alert("enter resources:");
+document.form.resources.focus();
+return false;
+}
+
+}
+</script>
+<body bgcolor="skyblue"><font color="red"><marquee><h2>CREATING CASE</h2></marquee></font>
+<form name="form" action="casecreation.jsp" onsubmit="return validation1()">
+<center>
+<table>
+<tr><td>case name</td><td><input type="text"name="casename"></td></tr>
+<tr><td>case details</td><td><input type="text"name="casedetails"></td></tr>
+<tr><td>Date of creation</td><td><input type="text"name="date"></td></tr>
+<tr><td>Resources provided</td><td><input type="text"name="resources"></td></tr>
+</table>
+<center>
+<br><br><br>
+<center><input type="submit" value="create"></center>
+
+</form>
+</body>
+</html>

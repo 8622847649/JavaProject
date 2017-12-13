@@ -1,0 +1,41 @@
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+agentname=document.form.agentname.value;
+if(agentname=="")
+{
+alert("enter agentname");
+document.form.agentname.focus();
+return false;
+}
+if(!isNaN(agentname))
+{
+alert("enter agentname:");
+document.form.agentname.focus();
+return false;
+}
+agentpassword=document.form.agentpassword.value;
+if(agentpassword=="")
+{
+alert("enter agentpassword");
+document.form.agentpassword.focus();
+return false;
+}
+if(!isNaN(agentpassword))
+{
+alert("enter agentpassword:");
+document.form.agentpassword.focus();
+return false;
+}
+}
+</script>
+<body bgcolor="orange">
+<center>
+<form name="form" action="agentlogin.jsp" onsubmit="return validation1()">
+<font color="green"><b><i> WELCOME TO AGENT</i></b></font><BR><BR><BR><BR>
+Enter user name   <input type="text" name="agentname"><BR><BR>
+Enter password     <input type="password" name="agentpassword"><BR><BR>
+<input type="submit" value="Login">
+</form>
+</center>

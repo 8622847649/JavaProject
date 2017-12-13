@@ -1,0 +1,21 @@
+<html>
+<body bgcolor="skyblue"><center><font color="red"><marquee>EDITING AGENT</marquee></font></center>
+
+<form action="editagent.jsp" method="get">
+<center>
+<table>
+<tr><td>Agent name</td><td><input type="text" name="agentname"></td></tr>
+<tr><td>password</td><td><input type="password" name="password"></td></tr>
+<tr><td>Date Of Birth</td><td><input type="text" name="dob">(dd-MM-yyyy)</td></tr>
+<tr><td>Contact Number</td><td><input type="text" name="phno"></td></tr>
+<tr><td>Qualification</td><td><input type="text" name="qual"></td></tr>
+<tr><td>Address</td><td><textarea name="address"></textarea></td></tr>
+
+</table>
+</center><br><br>
+
+<center><input type="submit" value="update"></center>
+
+</form>
+</table>
+</html>

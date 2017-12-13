@@ -1,0 +1,26 @@
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+caseid=document.form.caseid.value;
+if(caseid=="")
+{
+alert("enter caseid");
+document.form.caseid.focus();
+return false;
+}
+}
+</script>
+<body bgcolor="skyblue""><font color="blue"><marquee>CASE DETAILS</marquee></font>
+<form name="form"  action="casedetails.jsp"  method="get" onsubmit="return validation1()">
+<center>
+<table>
+<tr><td>case id</td><td><input type="text"name="caseid"></td></tr>
+
+</table>
+</center>
+<br><br>
+<center><input type="submit" value="get case details"></center>
+</form>
+</body>
+</html>

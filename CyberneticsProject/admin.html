@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> addclg news</TITLE>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+adminname=document.form.adminname.value;
+if(adminname=="")
+{
+alert("enter adminname");
+document.form.adminname.focus();
+return false;
+}
+if(!isNaN(adminname))
+{
+alert("enter adminname:");
+document.form.adminname.focus();
+return false;
+}
+adminpassword=document.form.adminpassword.value;
+if(adminpassword=="")
+{
+alert("enter adminpassword");
+document.form.adminpassword.focus();
+return false;
+}
+if(!isNaN(adminpassword))
+{
+alert("enter adminpassword:");
+document.form.adminpassword.focus();
+return false;
+}
+}
+</script>
+</head>
+<body bgcolor="orange">
+<form name="form" action="AdminLogin.jsp" onsubmit="return validation1()">
+<center>
+<font color="green"> <b><i><blink>WELCOME TO ADMIN</blink></b></i></font><BR><BR><BR><BR>
+<b>Enter user name</b>   <input type="text" name="adminname"><BR><BR>
+<b>Enter password</b>     <input type="password" name="adminpassword"><BR><BR>
+<font color="red"><input type="submit" value="Login"></font>
+</center>
+</form>
+</body>
+</HTML>

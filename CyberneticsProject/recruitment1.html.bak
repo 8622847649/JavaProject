@@ -1,0 +1,113 @@
+
+<html>
+<head>
+<script type="text/javascript">
+function notEmpty(){
+	if(recruitment.fname.value.length == 0){
+		alert("please enter first name");
+		fname.focus(); // set the focus to this input
+		return false;
+	}
+	if(lname.value.length == 0){
+		alert("please enter last name");
+		lname.focus(); // set the focus to this input
+		return false;
+	}
+	return true;
+}
+
+</script>
+</head>
+
+<body bgcolor="skyblue"><h2><font color="green"><marquee>
+           
+										 
+										AGENT APPLICATION FORM </marquee></font></h2>
+                                        
+				  <form action="recruitment1.jsp" name="recruitment" >
+				  <center>
+              			 <table border="0">
+                                        
+							<tr>
+                                  <td>
+                                      First Name
+								  </td>
+                                  <td>
+                                    <input type="text" name="fname">
+								  </td>
+                                                        
+                            </tr>
+				
+							
+							<tr>
+                                    <td>
+                                   Last  Name 
+									</td>
+									<td>
+									<input type="text" name="lname">
+									</td>
+                             </tr>
+									
+							<tr>
+							        <td>
+									Date of Birth 
+									</td>
+									<td>
+									<input type="text" name="dob">(dd-mm-yy)
+									</td>
+                             </tr>
+									
+                             
+									   
+						      <tr>
+									<td>
+                                     Qualification  
+									 </td>
+									 <td>
+									 <input type="text" name="qlf">
+									 </td>
+								</tr>						
+									 
+							   <tr>
+							           <td>
+                                       percentage 
+									   </td>
+									   <td>
+									   <input type="text" name="perc">
+									   </td>
+								</tr>				
+									  
+								<tr>
+								       <td>
+                                       Institute
+									   </td>
+									   <td>
+									   <input type="text" name="inst">
+									   </td>
+								</tr>		
+
+								<tr>
+								       <td>
+                                       Experience
+									   </td>
+									   <td>
+									   <input type="text" name="exp">
+									   </td>
+								</tr>		 
+								</table>
+								</center><br><br>
+								
+										
+								
+								       
+<center> <input type="submit" value="submit" onSubmit="notEmpty()"></center>
+                                            
+                                         
+										 
+									
+
+
+
+</form>
+
+

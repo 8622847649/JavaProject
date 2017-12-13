@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+jobtitle=document.form.jobtitle.value;
+if(jobtitle=="")
+{
+alert("enter jobtitle");
+document.form.jobtitle.focus();
+return false;
+}
+if(!isNaN(jobtitle))
+{
+alert("enter jobtitle:");
+document.form.jobtitle.focus();
+return false;
+}
+qlfy=document.form.qlfy.value;
+if(qlfy=="")
+{
+alert("enter qlfy");
+document.form.qlfy.focus();
+return false;
+}
+if(!isNaN(qlfy))
+{
+alert("enter qlfy:");
+document.form.qlfy.focus();
+return false;
+}
+percentage=document.form.percentage.value;
+if(percentage=="")
+{
+alert("enter percentage");
+document.form.percentage.focus();
+return false;
+}
+expr=document.form.expr.value;
+if(expr=="")
+{
+alert("enter expr");
+document.form.expr.focus();
+return false;
+}
+
+
+}
+</script>
+</head>
+<body bgcolor="skyblue">
+<form name="form" action="jobposting.jsp" onsubmit="return validation1();">
+<center>
+<table>
+<!--<tr><td>Job Id</td><td><input type="text" name="jid"></td></tr>-->
+<tr><td>Job Title</td><td><input type="text"name="jobtitle"></td></tr>
+<tr><td>Qualification </td><td><input type="text"name="qlfy"></td></tr>
+<tr><td>Percentage</td><td><input type="text"name="percentage"></td></tr>
+<tr><td>Experience</td><td><input type="text"name="expr"></td></tr>
+<tr><td>Last date</td><td><input type="text"name="lastdate">(dd/MM/yyyy)</td></tr>
+<tr><td>No of vacancies</td><td><input type="text"name="vacnc"></td></tr>
+<tr><td>Location</td><td> <input type="text"name="location"></td></tr>
+<tr><td>Salary </td><td><input type="text"name="salary"></td></tr>
+</table>
+</center>
+<center><input type="submit"value="post">
+</center>
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<body bgcolor="pink">
+<table>
+<tr>
+<td>
+<a href="casedetails.html" target="agentlink2"><b><i>case details</b></i></a>
+<BR><br>
+
+<a href="Updatevidence.html" target="agentlink2"><b><i>upload evidences</b></i></a><BR><br>
+<a href="agentinbox.jsp" target="agentlink2"><b><i>Inbox</b></i></a><BR><br>
+<a href="agentreports.jsp" target="agentlink2"><b><i>Reports</b></i></a><BR><br>
+
+
+</td>
+</tr>
+</table>
+<table height="10"width="300" align="center">
+<tr>
+<td>
+</td>
+</tr>
+</table>

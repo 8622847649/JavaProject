@@ -1,0 +1,43 @@
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+storytitle=document.form.storytitle.value;
+if(storytitle=="")
+{
+alert("enter storytitle");
+document.form.storytitle.focus();
+return false;
+}
+if(!isNaN(storytitle))
+{
+alert("enter storytitle:");
+document.form.storytitle.focus();
+return false;
+}
+description=document.form.description.value;
+if(description=="")
+{
+alert("enter description");
+document.form.description.focus();
+return false;
+}
+if(!isNaN(description))
+{
+alert("enter description:");
+document.form.description.focus();
+return false;
+}
+}
+</script>
+<body bgcolor="skyblue">
+<form name="form"  action="successstories.jsp" onsubmit="return validation1()">
+<center>
+<table>
+<tr><td>Story title</td><td><input type="text" name="storytitle"></td></tr>
+<tr><td>Description</td><td><textarea name="description"></textarea></td></tr>
+</table>
+</center><br><br><br>
+<center><input type="submit" value="add"></center>
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+<html>
+<script language="javascript" type="text/javascript">
+function validation1()
+{
+
+fname=document.form.fname.value;
+if(fname=="")
+{
+alert("enter fname");
+document.form.fname.focus();
+return false;
+}
+if(!isNaN(fname))
+{
+alert("enter fname:");
+document.form.fname.focus();
+return false;
+}
+lname=document.form.lname.value;
+if(lname=="")
+{
+alert("enter lname");
+document.form.lname.focus();
+return false;
+}
+if(!isNaN(lname))
+{
+alert("enter lname:");
+document.form.lname.focus();
+return false;
+}
+dob=document.form.dob.value;
+if(dob=="")
+{
+alert("enter dob");
+document.form.dob.focus();
+return false;
+}
+qlf=document.form.qlf.value;
+if(qlf=="")
+{
+alert("enter qlf");
+document.form.qlf.focus();
+return false;
+}
+if(!isNaN(qlf))
+{
+alert("enter qlf:");
+document.form.qlf.focus();
+return false;
+}
+perc=document.form.perc.value;
+if(perc=="")
+{
+alert("enter perc");
+document.form.perc.focus();
+return false;
+}
+/*if(!isNaN(perc))
+{
+alert("enter perc:");
+document.form.perc.focus();
+return false;
+}*/
+/*perc=document.form.perc.value;
+if(perc=="")
+{
+alert("enter perc");
+document.form.perc.focus();
+return false;
+}*/
+inst=document.form.inst.value;
+if(inst=="")
+{
+alert("enter inst");
+document.form.inst.focus();
+return false;
+}
+if(!isNaN(inst))
+{
+alert("enter inst:");
+document.form.inst.focus();
+return false;
+}
+exp=document.form.exp.value;
+if(exp=="")
+{
+alert("enter exp");
+document.form.exp.focus();
+return false;
+}
+
+}
+</script>
+</head>
+
+<body bgcolor="skyblue"><h2><font color="green"><marquee>
+           
+										 
+										AGENT APPLICATION FORM </marquee></font></h2>
+                                        
+				  <form name="form" action="recruitment1.jsp" name="recruitment" onsubmit="return validation1()" >
+				  <center>
+              			 <table border="0">
+						
+                                <tr>
+							 <td>
+							 JOB_TITLE
+							 </td>
+							 <td>
+							 <input type="text" name="jtitle" value="agent" readonly>
+							 </td>           
+							<tr>                                   <td>
+                                      First Name
+								  </td>
+                                  <td>
+                                    <input type="text" name="fname">
+								  </td>
+                                                        
+                            </tr>
+				
+							
+							<tr>
+                                    <td>
+                                   Last  Name 
+									</td>
+									<td>
+									<input type="text" name="lname">
+									</td>
+                             </tr>
+									
+							<tr>
+							        <td>
+									Date of Birth 
+									</td>
+									<td>
+									<input type="text" name="dob">(dd-mm-yy)
+									</td>
+                             </tr>
+									
+                             
+									   
+						      <tr>
+									<td>
+                                     Qualification  
+									 </td>
+									 <td>
+									 <input type="text" name="qlf">
+									 </td>
+								</tr>						
+									 
+							   <tr>
+							           <td>
+                                       percentage 
+									   </td>
+									   <td>
+									   <input type="text" name="perc">
+									   </td>
+								</tr>				
+									  
+								<tr>
+								       <td>
+                                       Institute
+									   </td>
+									   <td>
+									   <input type="text" name="inst">
+									   </td>
+								</tr>		
+
+								<tr>
+								       <td>
+                                       Experience
+									   </td>
+									   <td>
+									   <input type="text" name="exp">
+									   </td>
+								</tr>	
+									<tr>
+								       <td>
+                                       mobile
+									   </td>
+									   <td>
+									   <input type="text" name="mobile">
+									   </td>
+								</tr>		 
+								</table>
+								</center><br><br>
+								
+										
+								
+								       
+<center> <input type="submit" value="submit" onSubmit="notEmpty()"></center>
+                                            
+                                         
+										 
+									
+
+
+
+</form>
+
+
